@@ -1,0 +1,111 @@
+class BoardingPass:
+    def __init__(self, flight, seat):
+        self.flight = flight
+        self.seat = seat
+
+    def get_flight(self):
+        return self.flight
+
+    def set_flight(self, flight):
+        self.flight = flight
+
+    def get_seat(self):
+        return self.seat
+
+    def set_seat(self, seat):
+        self.seat = seat
+
+   
+    def display_boarding_pass(self):
+        pass  
+
+
+class Passenger:
+    def __init__(self, name, age, passport):
+        self.name = name
+        self.age = age
+        self.passport = passport
+
+    def get_name(self):
+        return self.name
+
+    def set_name(self, name):
+        self.name = name
+
+    def get_age(self):
+        return self.age
+
+    def set_age(self, age):
+        self.age = age
+
+    def get_passport(self):
+        return self.passport
+
+    def set_passport(self, passport):
+        self.passport = passport
+
+    
+    def update_information(self):
+        pass  
+
+
+class Flight:
+    def __init__(self, number, departure, arrival):
+        self.number = number
+        self.departure = departure
+        self.arrival = arrival
+
+    def get_number(self):
+        return self.number
+
+    def set_number(self, number):
+        self.number = number
+
+    def get_departure(self):
+        return self.departure
+
+    def set_departure(self, departure):
+        self.departure = departure
+
+    def get_arrival(self):
+        return self.arrival
+
+    def set_arrival(self, arrival):
+        self.arrival = arrival
+
+    
+    def update_schedule(self):
+        pass  
+
+
+class Seat:
+    def __init__(self, code, seat_class):
+        self.code = code
+        self.seat_class = seat_class
+
+    def get_code(self):
+        return self.code
+
+    def set_code(self, code):
+        self.code = code
+
+    def get_class(self):
+        return self.seat_class
+
+    def set_class(self, seat_class):
+        self.seat_class = seat_class
+
+    
+    def change_seat(self):
+        pass  
+
+# objects
+
+flight_info = Flight("XYZ789", "London", "Paris")
+seat_info = Seat("B22", "Business")
+passenger_info = Passenger("Abdalla Alketbi", 20, "AB987654")
+boarding_pass = BoardingPass(flight_info, seat_info)
+
+
+print("The Boarding Pass Details:")
+boarding_pass.display_boarding_pass()
